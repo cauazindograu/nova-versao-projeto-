@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="cadastro.html">Cadastro</a>
+        <a href="alunos.html">Alunos</a>
+        <a href="adm.html">Adm</a>
+    </header>
+    <div class="container">
+        <div id="login" class="card">
+            <h1>Acesso Restrito</h1>
+            <p>Digite sua senha de adm</p>
+            <form onsubmit="conferirAdm(event)">
+                <input type="password" id="senha" placeholder="Digite sua senha..." required>
+                <button type="submit">Acessar</button>
+            </form>
+        </div>
+        <div id="conteudo" style="display: none;">
+            <div class="card"
+                style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;"></div>
+            <h1>Painel do Adm</h1>
+            <p>Veja as estatisticas de cadastro</p>
+            <button onclick="logoutAdm()">Sair</button>
+        </div>
+        <div class="estatisticas" id="estatisticas">
+ 
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+ 
+</html>
