@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
  
 const db = mysql.createConnection({
-    host: process.env.DB_HOST || "localhost",
+    host: process.env.DB_HOST || "localhost", // essa parte relaciona com o render
     user: process.env.DB_USER || "root",
     password: process.env.DB_PASSWORD || "",
     database: process.env.DB_NAME || "natacao",
